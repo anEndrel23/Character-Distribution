@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Andrew
-Credit: stack overflow
+Credit: stack overflow, kyle, matt
 
 Assignment:
 
@@ -38,3 +38,14 @@ Notice about this example:
 """
 string = str(input("Please enter a string of text (the bigger the better): "))
 string = string.lower(string)
+
+nstrings = []
+newstrings = []
+
+for i in string:
+    if string.count(i) != 0:
+        nstrings.append(string.count(i))
+        #nstrings.sort(nstring)
+        #newstrings.append(i*string.count(i))
+#print(newstrings)
+print(nstrings)
