@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Andrew
-Credit: stack overflow, kyle, matt
+Credit: stack overflow, kyle, matt, Chris, google fro education
 
 Assignment:
 
@@ -36,16 +36,19 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-string = str(input("Please enter a string of text (the bigger the better): "))
-string = string.lower(string)
+import string
+stg = str(input("Please enter a string of text (the bigger the better): "))
+stg = stg.lower(stg)
 
-nstrings = []
-newstrings = []
+letters = list(string.ascii_lowercase)
 
-for i in string:
-    if string.count(i) != 0:
-        nstrings.append(string.count(i))
-        #nstrings.sort(nstring)
-        #newstrings.append(i*string.count(i))
-#print(newstrings)
-print(nstrings)
+text = []
+
+for i in letters:
+    if stg.count(i) != 0:
+        text.append(i * stg.count(i))
+        
+
+newtext = (sorted(text, key=len, reverse = True))
+for j in newtext:
+    print(j)
