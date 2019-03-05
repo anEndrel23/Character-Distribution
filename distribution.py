@@ -38,7 +38,7 @@ Notice about this example:
 """
 import string
 stg = str(input("Please enter a string of text (the bigger the better): "))
-stg = stg.lower(stg)
+stg = stg.lower()
 
 letters = list(string.ascii_lowercase)
 
