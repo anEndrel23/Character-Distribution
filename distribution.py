@@ -47,7 +47,7 @@ text = []
 for i in letters:
     if stg.count(i) != 0:
         text.append(i * stg.count(i))
-        
+
 
 newtext = (sorted(text, key=len, reverse = True))
 for j in newtext:
